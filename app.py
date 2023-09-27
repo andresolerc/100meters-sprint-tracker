@@ -4,6 +4,10 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import requests
+import sys
+
+st.write("Python Version:", sys.version)
+st.write("Matplotlib Version:", matplotlib.__version__)
 
 
 # Title of the app
