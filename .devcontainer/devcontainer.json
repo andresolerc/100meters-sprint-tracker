@@ -23,7 +23,8 @@
     ],
     // Use 'postCreateCommand' to run commands after the container is created.
     // Install app dependencies.
-    "postCreateCommand": "pip3 install --user -r requirements.txt",
+    "postCreateCommand": "echo 'Installing requirements...' && pip3 install --user -r requirements.txt && echo 'Installation complete!'",
+
     // Use 'postAttachCommand' to run commands after a tool has attached to the container.
     // Start the app.
     "postAttachCommand": {
