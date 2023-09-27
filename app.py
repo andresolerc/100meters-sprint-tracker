@@ -53,7 +53,8 @@ if len(sprint_times) > 0:
 
     # Plotting
     fig, ax = plt.subplots(figsize=(10, 4))
-    ax.plot(df['Set'], df['Speed (m/s)'], marker='o', label='Speed (m/s)')
+    ax.plot(df['Set'].to_numpy(), df['Speed (m/s)'].to_numpy(), marker='o', label='Speed (m/s)')
+    #ax.plot(df['Set'], df['Speed (m/s)'], marker='o', label='Speed (m/s)')
     ax.plot(df['Set'], df['Speed (km/h)'], marker='x', label='Speed (km/h)')
     ax.set_xlabel('Set')
     ax.set_ylabel('Speed')
